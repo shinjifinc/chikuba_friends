@@ -7,18 +7,19 @@ a{
 .questions-wrapper{
   padding: 0 10% 0 10%;
   .question-wrapper{
-    width:100%;
-    padding: 15px 0 15px;
-    margin-bottom:30px;
-    height:50px;
-    border: 1px solid red;
-    border-radius: 20px;
     .questions{
+      width:100%;
+      padding: 15px 0 15px;
+      margin-bottom:30px;
+      height:50px;
+      border: 1px solid red;
+      border-radius: 20px;
       text-align:center;
       font-size:36px;
       height:100%;
       width:100%;
       color:rgb(84,84,84);
+      word-wrap: break-word;
     }
   }
 }

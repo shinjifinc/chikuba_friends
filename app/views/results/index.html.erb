@@ -1,17 +1,42 @@
 <%= image_tag "smile.jpg", id: 'top' %>
 
-<div class='ranking-wrapper'>
+<div class='ranking-wrappers'>
 
-  <div id='question-title'>あなたの価値観とマッチする企業は...</div>
-
-  <div class='ranking-wrappers clearfix'>
-    <div class='ranking-wrapper_left'>
-      <p><%= image_tag "one.png", id: 'rank_one'%>株式会社リブセンス</p>
-      <p>マッチ度：90％</p>
-      <p>今すぐ応募すべきです！</p>
+  <div class='ranking-wrapper'>
+    <div id='ranking-title'>あなたの価値観とマッチする企業は...</div>
+    <div class='ranking-left'>
+      <div class='ranking-contents_title'><%= image_tag "one.png", id: 'rank_one'%>株式会社リブセンス</div>
+      <div class='ranking-contents_description'>事業：人材紹介、ウェブメディア</div>
+      <div class='ranking-contents_description'>マッチ度：90％</div>
+      <div class='ranking-contents_description'>今すぐ応募すべきです！</div>
     </div>
-    <div class='ranking-wrapper_right'>
-      <%= image_tag "livesense.png", id: 'top' %>
+    <div class='ranking-right'>
+      <%= image_tag "livesense.png", class: 'company_img'%>
     </div>
   </div>
+
+  <div class='ranking-wrapper'>
+    <div class='ranking-left'>
+      <div class='ranking-contents_title'><%= image_tag "two.png", id: 'rank_one'%>グーグル・ジャパン</div>
+      <div class='ranking-contents_description'>事業：人材紹介、ウェブメディア</div>
+      <div class='ranking-contents_description'>マッチ度：90％</div>
+      <div class='ranking-contents_description'>今すぐ応募すべきです！</div>
+    </div>
+    <div class='ranking-right'>
+      <%= image_tag "google.png", class: 'company_img'%>
+    </div>
+  </div>
+
+  <div class='ranking-wrapper'>
+    <div class='ranking-left'>
+      <div class='ranking-contents_title'><%= image_tag "three.png", id: 'rank_one'%>ソフトバンクグループ</div>
+      <div class='ranking-contents_description'>事業：人材紹介、ウェブメディア</div>
+      <div class='ranking-contents_description'>マッチ度：90％</div>
+      <div class='ranking-contents_description'>今すぐ応募すべきです！</div>
+    </div>
+    <div class='ranking-right'>
+      <%= image_tag "livesense.png", class: 'company_img'%>
+    </div>
+  </div>
+
 </div>

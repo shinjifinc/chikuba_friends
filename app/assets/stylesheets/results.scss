@@ -1,38 +1,41 @@
-.rank_image{
-  width:10%;
-}
-.ranking-wrapper{
+.ranking-wrappers{
+  width:94%;
   padding:0 3% 0 3%;
-  .ranking-wrappers{
-    width:100%;
-    border-bottom: 4px solid red;
-    .ranking-wrapper_left{
-      float:left;
-      width:70%;
-      p{
-        text-align: left;
-        font-size:36px;
-        color:rgb(84,84,84);
-      }
+  #ranking-title{
+    display: table;
+    font-size:40px;
+    text-align:center;
+    padding:30px 0 30px;
+    color:rgb(84,84,84);
+  }
+  .ranking-left{
+    display: table-cell;
+    // width:70%;
+    vertical-align: middle;
+    .ranking-contents_title{
+      font-size:44px;
+      padding-bottom:15px;
+      color:rgb(84,84,84);
     }
-    .ranking-wrapper_right{
-      float:right;
-      width:30%;
-      p{
-        text-align: left;
-        font-size:36px;
-        color:rgb(84,84,84);
-      }
+    .ranking-contents_description{
+      font-size:38px;
+      word-wrap: break-word;
+      padding:5px 0 5px;
+      color:rgb(84,84,84);
+    }
+  }
+  .ranking-right{
+    display: table-cell;
+    padding-left: 20px;
+    width:35%;
+    padding-top:20px;
+    padding-bottom:70px;
+    vertical-align: middle;
+    .company_img{
+      width:100%;
     }
   }
 }
-
-.clearfix { display: inline-table; }
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+.ranking-wrapper{
+  padding-bottom:40px;
 }
