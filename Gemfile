@@ -46,3 +46,5 @@ gem 'seed-fu'
 
 # Authentication
 gem 'devise'
+
+gem 'httparty'

@@ -13,8 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: <%= Settings.db.default.username %>
-  password: <%= Settings.db.default.password %>
+  username: root
+  password: root
+  #username: <%= Settings.db.default.username %>
+  #password: <%= Settings.db.default.password %>
   socket: /tmp/mysql.sock
 
 development:
