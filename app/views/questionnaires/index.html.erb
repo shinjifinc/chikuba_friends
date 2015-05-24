@@ -3,14 +3,14 @@
 <div class='questions-wrapper'>
 
   <div id='question-title'>あなたの価値観に合う企業理念はどれ？</div>
-  <% 3.times.each do |cnt| %>
+  <% @company_ideas.take(3).each_with_index do |company_idea, cnt| %>
     <div class='question-wrapper'>
-      <div id=<%="questions#{cnt+1}"%> class='questions' onclick='change_page(event, <%=cnt+1%>)'>機会によって自らを創出する</div>
+      <div id=<%="questions#{cnt+1}"%> class='questions' onclick='change_page(event, <%=cnt+1%>)'><%= company_idea.idea %></div>
     </div>
   <% end %>
   <div class='question-wrapper'>
     <%= link_to results_path do %>
-      <div id=<%="questions4"%> class='questions' >機会によって自らを創出する</div>
+      <div id=<%="questions4"%> class='questions' ><%= @company_ideas.last.idea %></div>
     <% end %>
   </div>
 </div>
