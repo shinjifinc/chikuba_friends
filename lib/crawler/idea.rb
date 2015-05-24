@@ -2,8 +2,6 @@ require 'open-uri'
 require 'bundler'
 Bundler.require
 
-binding.pry
-
 # スクレイピング先のURL
 url = 'http://www.kayac.com/vision/philosophy'
 
@@ -25,4 +23,6 @@ doc.css("p").each_with_index do |p, j| #始めが１ずれている
   ps[j-5] = p.text if j >= 5
 end
 
-puts h3s.join("\n")
+h3s.each_with_index do |company, i|
+  puts "#{company}\t#{ps[i]}"
+end
