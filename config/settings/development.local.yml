@@ -1,0 +1,5 @@
+db:
+  default:
+    username: root
+    password: shinji
+    socket: /tmp/mysql.sock
