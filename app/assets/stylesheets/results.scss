@@ -1,0 +1,38 @@
+.rank_image{
+  width:10%;
+}
+.ranking-wrapper{
+  padding:0 3% 0 3%;
+  .ranking-wrappers{
+    width:100%;
+    border-bottom: 4px solid red;
+    .ranking-wrapper_left{
+      float:left;
+      width:70%;
+      p{
+        text-align: left;
+        font-size:36px;
+        color:rgb(84,84,84);
+      }
+    }
+    .ranking-wrapper_right{
+      float:right;
+      width:30%;
+      p{
+        text-align: left;
+        font-size:36px;
+        color:rgb(84,84,84);
+      }
+    }
+  }
+}
+
+.clearfix { display: inline-table; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
